@@ -1,7 +1,7 @@
 
 import Hero from "./components/hero/page";
 import Navbar from "./components/navbar/page";
-
+import GradientText from "./components/heading/heading";
 export default function Home() {
   return (
     <main>
@@ -9,6 +9,9 @@ export default function Home() {
           <section>
             <section>
               <Navbar></Navbar>
+            </section>
+            <section>
+              <GradientText></GradientText>
             </section>
             <section>
               <Hero></Hero>

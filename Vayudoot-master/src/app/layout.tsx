@@ -3,6 +3,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Manrope } from "next/font/google";
 import { Syncopate } from "next/font/google";
+import Cursor from "./components/cursor/cursor";
 const syncopate = Syncopate({
   variable: "--font-syncopate",
   subsets: ["latin"],
@@ -36,7 +37,10 @@ export default function RootLayout({
         className={`  antialiased`}
       >
         {children}
+        <Cursor />
       </body>
     </html>
   );
 }
+
+
